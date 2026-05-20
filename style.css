@@ -2086,7 +2086,7 @@ header.scrolled .header-content {
 
 /* Logo Image */
 .logo img {
-  height: 42px;
+  height: 66px;
   width: auto;
   object-fit: contain;
   transition: transform 0.4s ease;
@@ -2101,7 +2101,7 @@ header.scrolled .header-content {
 
 /* Shrink logo on scroll */
 header.scrolled .logo img {
-  height: 36px;
+  height:66px;
 }
 
 header.scrolled .logo-text {
@@ -4695,7 +4695,74 @@ i.fa-solid.fa-location-dot {
     height: 300px;
   }
 }
+/* 20/05/26 */
+@media (max-width: 768px) {
 
+  .header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 18px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.4s ease;
+  }
+
+  .header-content.scrolled {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    padding: 8px 18px;
+  }
+
+  .header-content-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  /* Logo */
+  .logo img {
+    width: 72px;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    filter: brightness(0) invert(1);
+  }
+
+  /* Logo text */
+  .logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  /* On scroll */
+  .header-content.scrolled .logo img {
+    filter: none;
+    width: 65px;
+  }
+
+  .header-content.scrolled .logo-text {
+    color: #fff;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 
 /* Mobile bottom bar and popup  start*/
@@ -5069,10 +5136,16 @@ i.fa-solid.fa-location-dot {
 
   .js-hero-title {
     font-size: 34px;
+    margin-top: 0px;
   }
 
   .js-hero-subtitle {
     font-size: 14px;
+    padding-top:65px;
+  }
+  .js-hero-cta-wrapper {
+    margin-top: 3px;
+    padding-bottom: 69px;
   }
 }
 /* Base Hero Button */
@@ -6175,15 +6248,16 @@ i.fa-solid.fa-location-dot {
   .vm-card,
   .vm-card.reverse {
     flex-direction: column;
+    gap:0px;
   }
 
   .vm-image {
     width: 100%;
-    min-height: 300px;
+    min-height: 225px;
   }
 
   .vm-content {
-    padding: 35px 25px;
+    padding: 10px 25px;
   }
 
   .section-header h2 {
@@ -6198,7 +6272,7 @@ i.fa-solid.fa-location-dot {
 @media (max-width: 576px) {
 
   .vision-mission-section {
-    padding: 70px 20px;
+    padding: 45px 20px;
   }
 
   .section-header h2 {
@@ -6211,6 +6285,9 @@ i.fa-solid.fa-location-dot {
 
   .vm-content p {
     font-size: 15px;
+  }
+  .vision-mission-wrapper {
+    gap:30px;
   }
 }
 /* Featured Villas Section */
@@ -6366,7 +6443,7 @@ i.fa-solid.fa-location-dot {
 @media (max-width: 576px) {
 
   .featured-villas {
-    padding: 80px 20px;
+    padding: 20px 20px;
   }
 
   .section-title h2 {
@@ -6649,7 +6726,7 @@ i.fa-solid.fa-location-dot {
 
   .js-luxury-section,
   .js-clients-section {
-    padding: 80px 0;
+    padding: 30px 0;
   }
 
   .js-luxury-slider {
