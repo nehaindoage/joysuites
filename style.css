@@ -6067,3 +6067,627 @@ i.fa-solid.fa-location-dot {
     gap: 40px;
   }
 }
+/* 19/05/26 */
+/* Vision Mission Section */
+.vision-mission-section {
+  padding: 100px 7%;
+  background: #f8fafc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-mission-section .container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-header .sub-title {
+  color: #c59d5f;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  font-size: 48px;
+  margin: 15px 0;
+  color: #111827;
+  font-weight: 700;
+}
+
+.section-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.vision-mission-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.vm-card {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.vm-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.vm-image {
+  flex: 1;
+  min-height: 420px;
+}
+
+.vm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vm-content {
+  flex: 1;
+  padding: 50px;
+}
+
+.vm-tag {
+  display: inline-block;
+  background: rgba(197, 157, 95, 0.12);
+  color: #c59d5f;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vm-content h3 {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.vm-content p {
+  color: #6b7280;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+
+  .vm-card,
+  .vm-card.reverse {
+    flex-direction: column;
+  }
+
+  .vm-image {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .vm-content {
+    padding: 35px 25px;
+  }
+
+  .section-header h2 {
+    font-size: 38px;
+  }
+
+  .vm-content h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .vision-mission-section {
+    padding: 70px 20px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .vm-content h3 {
+    font-size: 24px;
+  }
+
+  .vm-content p {
+    font-size: 15px;
+  }
+}
+/* Featured Villas Section */
+.featured-villas {
+  padding: 110px 7%;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.featured-villas .container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title span {
+  display: inline-block;
+  color: #c59d5f;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.section-title p {
+  max-width: 720px;
+  margin: auto;
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.villa-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.villa-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+}
+
+.villa-card:hover {
+  transform: translateY(-10px);
+}
+
+.villa-image {
+  height: 320px;
+  overflow: hidden;
+}
+
+.villa-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.villa-card:hover .villa-image img {
+  transform: scale(1.08);
+}
+
+.villa-content {
+  padding: 35px 30px;
+}
+
+.villa-tag {
+  display: inline-block;
+  padding: 9px 18px;
+  background: rgba(197, 157, 95, 0.12);
+  color: #c59d5f;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.villa-content h3 {
+  font-size: 30px;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.villa-content p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 28px;
+  font-size: 15px;
+}
+
+.villa-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  background: #111827;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.villa-btn:hover {
+  background: #c59d5f;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+
+  .villa-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .villa-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .villa-content h3 {
+    font-size: 26px;
+  }
+
+  .villa-image {
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .featured-villas {
+    padding: 80px 20px;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+
+  .villa-content {
+    padding: 28px 22px;
+  }
+}
+/* =========================================
+   Luxury Experience Slider Section
+========================================= */
+
+.js-luxury-section {
+  padding: 110px 0;
+  background: #f8fafc;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.js-luxury-heading {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.js-luxury-heading span {
+  display: inline-block;
+  color: #c59d5f;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.js-luxury-heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.js-luxury-heading p {
+  max-width: 720px;
+  margin: auto;
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Slider */
+.js-luxury-slider {
+  position: relative;
+  width: 85%;
+  height: 650px;
+  margin: 0 auto;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+/* Slides */
+.js-slide-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: jsBannerSlider 15s infinite;
+}
+
+.js-slide-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.js-slide-item:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.js-slide-item:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.js-slide-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.js-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75),
+    rgba(0,0,0,0.15)
+  );
+}
+
+/* Text */
+.js-slide-content {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+  z-index: 2;
+}
+
+.js-slide-content h3 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Animation */
+@keyframes jsBannerSlider {
+
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  35% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* =========================================
+   Corporate Clients Section
+========================================= */
+
+.js-clients-section {
+  width: 100%;
+  padding: 110px 0;
+  background: #ffffff;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.js-clients-heading {
+  text-align: center;
+  margin-bottom: 70px;
+  padding: 0 20px;
+}
+
+.js-clients-heading span {
+  display: inline-block;
+  color: #c59d5f;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.js-clients-heading h2 {
+  font-size: 48px;
+  color: #111827;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.js-clients-heading p {
+  max-width: 720px;
+  margin: auto;
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Marquee */
+.js-clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track */
+.js-clients-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  animation: jsClientsScroll 30s linear infinite;
+}
+
+/* Logo Box */
+.js-client-logo {
+  width: 240px;
+  height: 130px;
+  background: #f8fafc;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  transition: 0.4s ease;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.js-client-logo:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* Images */
+.js-client-logo img {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: 0.3s ease;
+}
+
+.js-client-logo:hover img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes jsClientsScroll {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 991px) {
+
+  .js-luxury-slider {
+    height: 520px;
+    width: 92%;
+  }
+
+  .js-luxury-heading h2,
+  .js-clients-heading h2 {
+    font-size: 38px;
+  }
+
+  .js-slide-content {
+    left: 35px;
+    bottom: 35px;
+  }
+
+  .js-slide-content h3 {
+    font-size: 42px;
+  }
+
+  .js-client-logo {
+    width: 200px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .js-luxury-section,
+  .js-clients-section {
+    padding: 80px 0;
+  }
+
+  .js-luxury-slider {
+    height: 420px;
+    width: 92%;
+    border-radius: 24px;
+  }
+
+  .js-luxury-heading h2,
+  .js-clients-heading h2 {
+    font-size: 30px;
+  }
+
+  .js-luxury-heading p,
+  .js-clients-heading p {
+    font-size: 15px;
+  }
+
+  .js-slide-content {
+    left: 25px;
+    bottom: 25px;
+  }
+
+  .js-slide-content h3 {
+    font-size: 28px;
+  }
+
+  .js-client-logo {
+    width: 170px;
+    height: 95px;
+    padding: 18px;
+  }
+
+  .js-client-logo img {
+    max-height: 50px;
+  }
+
+  .js-clients-track {
+    gap: 20px;
+  }
+}
