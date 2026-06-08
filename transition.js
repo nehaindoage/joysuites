@@ -49,7 +49,16 @@ function getTriggerHeight() {
 
   return 100;
 }
+// 20/05/26
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header-content");
 
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
 
 // ================================
 // HEADER STYLE SWITCH
